@@ -1,0 +1,16 @@
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\PicCompress.exe
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\PicCompress.deps.json
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\PicCompress.runtimeconfig.json
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\PicCompress.dll
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\ref\PicCompress.dll
+E:\VSProgram\.netProgram\PicCompress\PicCompress\bin\Release\net6.0-windows\PicCompress.pdb
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.MainWindow.resources
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.csproj.GenerateResource.cache
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.AssemblyInfoInputs.cache
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.AssemblyInfo.cs
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.csproj.CoreCompileInputs.cache
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.dll
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\ref\PicCompress.dll
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.pdb
+E:\VSProgram\.netProgram\PicCompress\PicCompress\obj\Release\net6.0-windows\PicCompress.genruntimeconfig.cache
