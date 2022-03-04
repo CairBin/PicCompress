@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj": {}
+    "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj": {}
   },
   "projects": {
-    "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj": {
+    "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj",
+        "projectUniqueName": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
         "projectName": "PicCompress",
-        "projectPath": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj",
+        "projectPath": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
         "packagesPath": "C:\\Users\\Cair\\.nuget\\packages\\",
-        "outputPath": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\obj\\",
+        "outputPath": "G:\\GitUpload\\PicCompress\\PicCompress\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Cair\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows7.0"
@@ -61,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
