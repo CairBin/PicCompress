@@ -122,6 +122,7 @@ namespace PicCompress
             //打开目录
             FolderBrowserDialog path = new FolderBrowserDialog();
             path.ShowDialog();
+            //若取消选择则返回
             if (path.SelectedPath == String.Empty) return;
             this.Txt_outPath.Text = path.SelectedPath + "\\";
         }
