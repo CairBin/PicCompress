@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\PicCompress\\PicCompress-2.0.0\\PicCompress\\PicCompress.csproj": {}
+    "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj": {}
   },
   "projects": {
-    "G:\\PicCompress\\PicCompress-2.0.0\\PicCompress\\PicCompress.csproj": {
+    "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PicCompress\\PicCompress-2.0.0\\PicCompress\\PicCompress.csproj",
+        "projectUniqueName": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
         "projectName": "PicCompress",
-        "projectPath": "G:\\PicCompress\\PicCompress-2.0.0\\PicCompress\\PicCompress.csproj",
+        "projectPath": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
         "packagesPath": "C:\\Users\\Cair\\.nuget\\packages\\",
-        "outputPath": "G:\\PicCompress\\PicCompress-2.0.0\\PicCompress\\obj\\",
+        "outputPath": "G:\\GitUpload\\PicCompress\\PicCompress\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
