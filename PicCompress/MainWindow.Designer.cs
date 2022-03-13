@@ -38,6 +38,7 @@
             this.Button_run = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Check_quickMod = new System.Windows.Forms.CheckBox();
+            this.Button_setPath = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Txt_imgPath
@@ -119,11 +120,22 @@
             this.Check_quickMod.Text = "checkBox1";
             this.Check_quickMod.UseVisualStyleBackColor = true;
             // 
+            // Button_setPath
+            // 
+            this.Button_setPath.Location = new System.Drawing.Point(16, 198);
+            this.Button_setPath.Name = "Button_setPath";
+            this.Button_setPath.Size = new System.Drawing.Size(129, 23);
+            this.Button_setPath.TabIndex = 9;
+            this.Button_setPath.Text = "button1";
+            this.Button_setPath.UseVisualStyleBackColor = true;
+            this.Button_setPath.Click += new System.EventHandler(this.Button_setPath_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 231);
+            this.Controls.Add(this.Button_setPath);
             this.Controls.Add(this.Check_quickMod);
             this.Controls.Add(this.Button_run);
             this.Controls.Add(this.compressBar);
@@ -153,5 +165,6 @@
         private Button Button_run;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private CheckBox Check_quickMod;
+        private Button Button_setPath;
     }
 }
