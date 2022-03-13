@@ -37,8 +37,7 @@
             this.compressBar = new System.Windows.Forms.ProgressBar();
             this.Button_run = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.Button_setPath = new System.Windows.Forms.Button();
+            this.Check_quickMod = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Txt_imgPath
@@ -110,33 +109,22 @@
             this.Button_run.UseVisualStyleBackColor = true;
             this.Button_run.Click += new System.EventHandler(this.Button_run_Click);
             // 
-            // checkBox1
+            // Check_quickMod
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(252, 198);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(89, 21);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // Button_setPath
-            // 
-            this.Button_setPath.Location = new System.Drawing.Point(16, 198);
-            this.Button_setPath.Name = "Button_setPath";
-            this.Button_setPath.Size = new System.Drawing.Size(129, 23);
-            this.Button_setPath.TabIndex = 9;
-            this.Button_setPath.Text = "button1";
-            this.Button_setPath.UseVisualStyleBackColor = true;
-            this.Button_setPath.Click += new System.EventHandler(this.Button_setPath_Click);
+            this.Check_quickMod.AutoSize = true;
+            this.Check_quickMod.Location = new System.Drawing.Point(252, 198);
+            this.Check_quickMod.Name = "Check_quickMod";
+            this.Check_quickMod.Size = new System.Drawing.Size(89, 21);
+            this.Check_quickMod.TabIndex = 8;
+            this.Check_quickMod.Text = "checkBox1";
+            this.Check_quickMod.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 231);
-            this.Controls.Add(this.Button_setPath);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.Check_quickMod);
             this.Controls.Add(this.Button_run);
             this.Controls.Add(this.compressBar);
             this.Controls.Add(this.Label_outPath);
@@ -164,7 +152,6 @@
         private ProgressBar compressBar;
         private Button Button_run;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private CheckBox checkBox1;
-        private Button Button_setPath;
+        private CheckBox Check_quickMod;
     }
 }

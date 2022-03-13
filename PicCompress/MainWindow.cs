@@ -33,15 +33,11 @@ namespace PicCompress
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            //创建输出目录记录文件，默认为该程序目录
-            FileOperator.CreateFile(GetAppPath(), "outpath", GetAppPath());
-
             //设置窗体
             this.Width = WD_WIDTH;
             this.Height = WD_HEIGHT;
             this.FormBorderStyle = FormBorderStyle.Fixed3D;
             this.Text = "PicCompress";
-            this.MaximizeBox = false;
 
             //设置图片目录标签
             this.Label_imgPath.Text = "图片：";
@@ -58,11 +54,9 @@ namespace PicCompress
             this.Txt_imgPath.ReadOnly = true;
 
             //设置输出目录文本输入框
-            string txt = String.Empty;
-            FileOperator.ReadFileFirstLine(GetAppPath()+"outpath",ref txt);
-            this.Txt_outPath.Text = txt;
+            this.Txt_outPath.Text = GetAppPath();
             this.Txt_outPath.Location = new Point(16,106);
-            this.Txt_outPath.Width= TXTBOX_WIDTH;
+            this.Txt_imgPath.Width= TXTBOX_WIDTH;
             this.Txt_outPath.ReadOnly = true;
 
             //设置进度条
@@ -85,13 +79,9 @@ namespace PicCompress
             this.Button_run.Text = "运行";
 
             //设置选择框
-            this.checkBox1.Text = "快速模式";
-            this.checkBox1.CheckState = CheckState.Checked; //默认选中
-            this.checkBox1.Location = new Point(270, 187);
-
-            //设置默认目录按钮
-            this.Button_setPath.Text = "设为默认输出目录";
-            this.Button_setPath.Location = new Point(16, 187);
+            this.Check_quickMod.Text = "快速模式";
+            this.Check_quickMod.CheckState = CheckState.Checked; //默认选中
+            this.Check_quickMod.Location = new Point(270, 187);
 
         }
 
@@ -104,6 +94,7 @@ namespace PicCompress
 
         private void Button_openFile_Click(object sender, EventArgs e)
         {
+            lst.Clear();    //清空上一次记录
             OpenFileDialog file = new OpenFileDialog();
             file.Multiselect = true;
             file.Filter = "PNG(*.png)|*.png|JPEG(*.jpg, *.jpeg, *.jpe, *.jfif)|*.jpg;*.jpeg;*.jpe;*.jfif";
@@ -122,8 +113,6 @@ namespace PicCompress
             //打开目录
             FolderBrowserDialog path = new FolderBrowserDialog();
             path.ShowDialog();
-            //若取消选择则返回
-            if (path.SelectedPath == String.Empty) return;
             this.Txt_outPath.Text = path.SelectedPath + "\\";
         }
 
@@ -138,17 +127,42 @@ namespace PicCompress
             compressBar.Value = 0;
 
 
-            if (this.checkBox1.Checked == true)
+            if (this.Check_quickMod.Checked == true)
             {
-                MessageBox.Show("hello");
+                //快速模式
+                for (int i = 0; i < lst.Count; i++)
+                {
+                    string dFile = this.Txt_outPath.Text + GetSysTime() + ".jpg";
+                    if (!Compressing.CompressImage(lst[i], dFile))
+                    {
+                        MessageBox.Show("压缩出现错误！");
+                        return;
+                    }
+                    compressBar.Value = (int)(1.0 * i / lst.Count * 100);
+                }
+
+
             }
             else
             {
-                MessageBox.Show("No");
+                //非快速模式
+                for (int i = 0; i < lst.Count; i++)
+                {
+                    string dFile = this.Txt_outPath.Text + GetSysTime() + ".jpg";
+                    if (!Compressing.CompressImage(lst[i], dFile))
+                    {
+                        MessageBox.Show("压缩出现错误！");
+                        return;
+                    }
+                    Thread.Sleep(100);
+                    compressBar.Value = (int)(1.0 * i / lst.Count * 100);
+                }
+
             }
 
-            
-            
+            compressBar.Value = 100;
+            Thread.Sleep(400);
+            MessageBox.Show("成功！");
 
         }
 
@@ -158,23 +172,7 @@ namespace PicCompress
             return time;
         }
 
-        private void Button_setPath_Click(object sender, EventArgs e)
-        {
-            string path = this.Txt_outPath.Text;
 
-            if(!File.Exists(GetAppPath()+"outpath"))
-            {
-                MessageBox.Show("错误：默认目录设置文件不存在");
-                this.Close();
-            }
 
-            //写入默认目录
-            if (FileOperator.WriteFile(GetAppPath() + "outpath",
-                this.Txt_outPath.Text))
-                MessageBox.Show("设置成功！");
-            else
-                MessageBox.Show("设置失败！");
-
-        }
     }
 }

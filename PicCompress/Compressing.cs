@@ -14,7 +14,7 @@ namespace PicCompress
         //压缩后最大大小
         private const int size = 300;
 
-        //本方法来自https://www.cnblogs.com/ZXdeveloper/p/6841878.html
+        //本方法来自https://www.cnblogs.com/ZXdeveloper/p/6841878.html   
         public static bool CompressImage(string sFile, string dFile, bool sfsc = true, int flag = quality)
         {
             //如果是第一次调用，原始图像的大小小于要压缩的大小，则直接复制文件，并且返回true

@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
+      "projectUniqueName": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj",
       "projectName": "PicCompress",
-      "projectPath": "G:\\GitUpload\\PicCompress\\PicCompress\\PicCompress.csproj",
+      "projectPath": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\PicCompress.csproj",
       "packagesPath": "C:\\Users\\Cair\\.nuget\\packages\\",
-      "outputPath": "G:\\GitUpload\\PicCompress\\PicCompress\\obj\\",
+      "outputPath": "E:\\VSProgram\\.netProgram\\PicCompress\\PicCompress\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
